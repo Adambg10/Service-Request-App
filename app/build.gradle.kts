@@ -9,6 +9,12 @@ android {
         version = release(35)
     }
 
+    val configuredBaseUrl = providers
+        .gradleProperty("MYPROJECT_API_BASE_URL")
+        .orElse("http://10.0.2.2/my_api/")
+        .get()
+    val apiBaseUrl = if (configuredBaseUrl.endsWith('/')) configuredBaseUrl else "$configuredBaseUrl/"
+
     defaultConfig {
         applicationId = "com.example.myproject"
         minSdk = 26
@@ -17,6 +23,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "API_BASE_URL", "\"$apiBaseUrl\"")
     }
 
     buildTypes {
@@ -37,6 +44,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 
