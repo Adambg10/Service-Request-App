@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer circle - lightest red -->
+    <item
+        android:width="48dp"
+        android:height="48dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFCDD2" />
+        </shape>
+    </item>
+    <!-- Middle circle - medium red -->
+    <item
+        android:width="36dp"
+        android:height="36dp"
+        android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="#F44336" />
+        </shape>
+    </item>
+    <!-- Inner circle - dark red -->
+    <item
+        android:width="26dp"
+        android:height="26dp"
+        android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="#C62828" />
+        </shape>
+    </item>
+    <!-- Car repair icon -->
+    <item
+        android:width="18dp"
+        android:height="18dp"
+        android:gravity="center"
+        android:drawable="@drawable/outline_car_repair_24" />
+</layer-list>

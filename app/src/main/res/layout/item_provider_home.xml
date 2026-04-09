@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Provider Icon -->
+        <ImageView
+            android:id="@+id/img_provider_icon"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/marker_electrician"
+            android:scaleType="centerInside"
+            android:padding="8dp"
+            android:background="@drawable/icon_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Provider Details Section -->
+        <LinearLayout
+            android:id="@+id/layout_provider_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@+id/img_provider_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_demander"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <!-- Provider Name -->
+            <TextView
+                android:id="@+id/tv_provider_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Provider Name"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Rating and Review Count -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical">
+
+                <RatingBar
+                    android:id="@+id/rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:numStars="5"
+                    android:rating="4.5"
+                    android:isIndicator="true"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:layout_marginStart="-4dp" />
+
+                <TextView
+                    android:id="@+id/tv_review_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(42)"
+                    android:textColor="#757575"
+                    android:textSize="12sp"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+            <!-- Distance -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📍"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_provider_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.5 km"
+                    android:textColor="#757575"
+                    android:textSize="12sp"
+                    android:layout_marginStart="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Demander Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_demander"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Demander"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

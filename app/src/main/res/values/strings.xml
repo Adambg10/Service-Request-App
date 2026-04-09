@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyProject</string>
+    <string name="link_sign_in">Vous avez déjà un compte ? <u>Se connecter</u></string>
+</resources>

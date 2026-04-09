@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type_user">
+        <item>Plombier</item>
+        <item>Electricien</item>
+        <item>Technicien de climatisation</item>
+        <item>mecanicien</item>
+    </string-array>
+
+        <string name="logo_description">Logo de l\'application</string>
+        <string name="create_account_title">Créer un compte</string>
+        <string name="username_hint">Nom d\'utilisateur</string>
+        <string name="password_hint">Mot de passe</string>
+        <string name="phone_hint">Numéro de téléphone</string>
+        <string name="job_hint">Métier</string>
+        <string name="signup_button">S\'inscrire</string>
+        <string name="already_have_account_link">Déjà un compte ? Se connecter</string>
+
+</resources>

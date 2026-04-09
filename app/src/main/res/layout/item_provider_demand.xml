@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardBackgroundColor="@color/surface_color"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/text_secondary"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Header: Name + Distance -->
+        <TextView
+            android:id="@+id/textClientName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Client Name"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:textColor="@color/on_surface_color"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/chipDistance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0 km"
+            android:textColor="@color/text_secondary"
+            app:chipBackgroundColor="@android:color/transparent"
+            app:chipIcon="@drawable/ic_location_on"
+            app:chipIconTint="#FF9800"
+            app:chipMinHeight="24dp"
+            app:chipStrokeWidth="0dp"
+            app:ensureMinTouchTargetSize="false"
+            app:layout_constraintBottom_toBottomOf="@id/textClientName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textClientName" />
+
+        <!-- Time -->
+        <TextView
+            android:id="@+id/textScheduledTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Today, 14:00"
+            android:textAppearance="?attr/textAppearanceCaption"
+            android:textColor="@color/text_secondary"
+            app:drawableStartCompat="@drawable/ic_schedule"
+            app:drawableTint="@color/text_secondary"
+            android:drawablePadding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textClientName" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@id/textScheduledTime" />
+
+        <!-- Body: Description -->
+        <TextView
+            android:id="@+id/textProblemDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Problem description goes here..."
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/text_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <!-- Actions -->
+        <LinearLayout
+            android:id="@+id/layoutButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@id/textProblemDescription">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeny"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Refuser"
+                android:textColor="@android:color/holo_red_dark"
+                app:strokeColor="@android:color/holo_red_dark" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAccept"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:text="Accepter"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- Active State Actions (Hidden by default) -->
+        <!-- Active State Actions (Hidden by default) -->
+        <LinearLayout
+            android:id="@+id/layoutActiveActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/textProblemDescription">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnShowItinerary"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:backgroundTint="#2196F3"
+                android:text="Itinéraire"
+                android:textColor="@android:color/white"
+                android:visibility="gone"
+                app:icon="@drawable/ic_location_on"
+                app:iconTint="@android:color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCall"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:backgroundTint="#4CAF50"
+                android:text="Appeler"
+                android:textColor="@android:color/white"
+                android:visibility="gone"
+                app:icon="@drawable/ic_call"
+                app:iconTint="@android:color/white" />
+        </LinearLayout>
+
+        <!-- Resolution Actions -->
+        <LinearLayout
+            android:id="@+id/layoutResolution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@id/layoutActiveActions">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnResolutionFailed"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:paddingHorizontal="4dp"
+                android:text="Non résolu"
+                android:textColor="@android:color/holo_red_dark"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:icon="@drawable/ic_close"
+                app:iconPadding="4dp"
+                app:iconTint="@android:color/holo_red_dark"
+                app:strokeColor="@android:color/holo_red_dark" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnResolutionSuccess"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:text="Résolu"
+                android:textColor="@android:color/white"
+                app:icon="@drawable/ic_check"
+                app:iconTint="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Status"
+            android:textAppearance="?attr/textAppearanceCaption"
+            android:textColor="@color/text_secondary"
+            android:textStyle="italic"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutResolution" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

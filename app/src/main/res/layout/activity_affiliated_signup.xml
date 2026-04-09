@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AffiliatedSignupActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Affiliated Sign Up"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupProfession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
+
+        <RadioButton
+            android:id="@+id/radioButtonElectrician"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electrician"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPlumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plombier" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Technicien en climatisation" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMechanic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mecanicien" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSignupAffiliated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupProfession" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

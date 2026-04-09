@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer circle - lightest blue -->
+    <item
+        android:width="48dp"
+        android:height="48dp">
+        <shape android:shape="oval">
+            <solid android:color="#BBDEFB" />
+        </shape>
+    </item>
+    <!-- Middle circle - medium blue -->
+    <item
+        android:width="36dp"
+        android:height="36dp"
+        android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="#2196F3" />
+        </shape>
+    </item>
+    <!-- Inner circle - dark blue -->
+    <item
+        android:width="26dp"
+        android:height="26dp"
+        android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="#1565C0" />
+        </shape>
+    </item>
+    <!-- Bolt icon -->
+    <item
+        android:width="18dp"
+        android:height="18dp"
+        android:gravity="center"
+        android:drawable="@drawable/outline_bolt_24" />
+</layer-list>

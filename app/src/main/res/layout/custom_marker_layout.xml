@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="60dp">
+
+    <!-- Blue Teardrop Background (using a vector drawable or shape) -->
+    <!-- Since we don't have a vector yet, we can use a rotated square with rounded corners or a simple image.
+         For simplicity and "blue teardrop" request, let's assume we can use a background drawable.
+         I'll create a simple shape here or use a placeholder.
+         Let's use a CardView to make a circle/teardrop shape or just a background view.
+    -->
+    
+    <ImageView
+        android:id="@+id/marker_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_marker_white_pin"
+        android:scaleType="fitCenter"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/marker_logo"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"/>
+
+</FrameLayout>

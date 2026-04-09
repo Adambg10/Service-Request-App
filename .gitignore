@@ -1,0 +1,30 @@
+# --- IDE / Tooling ---
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+out/
+
+# --- Build Outputs ---
+build/
+.gradle/
+bin/
+gen/
+
+# --- Kotlin Specific ---
+.kotlin/
+
+# --- Local Configurations & Secrets ---
+local.properties
+.env
+*.jks
+*.keystore
+google-services.json
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- Log Files ---
+*.log

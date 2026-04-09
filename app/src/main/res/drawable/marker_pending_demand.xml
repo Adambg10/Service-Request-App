@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="40"
+    android:viewportHeight="40">
+    
+    <!-- Orange teardrop/pin shape -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M20,2C13.4,2 8,7.4 8,14c0,8.8 12,22 12,22s12,-13.2 12,-22C32,7.4 26.6,2 20,2z"/>
+    
+    <!-- White circle inside -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,8c-3.3,0 -6,2.7 -6,6s2.7,6 6,6 6,-2.7 6,-6 -2.7,-6 -6,-6z"/>
+    
+    <!-- Orange question mark / clock icon (pending indicator) -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M20,10c-2.2,0 -4,1.8 -4,4s1.8,4 4,4 4,-1.8 4,-4 -1.8,-4 -4,-4zM20,17c-0.6,0 -1,-0.4 -1,-1h2C21,16.6 20.6,17 20,17zM21,15h-2v-4h2V15z"/>
+</vector>
