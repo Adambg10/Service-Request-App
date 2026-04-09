@@ -28,21 +28,23 @@ Backend is a PHP + MySQL API.
 ## Screenshots
 <table>
   <tr>
-    <td align="center"><strong>Login</strong><br><img src="docs/images/login.jpg" alt="Login" width="360" height="220"/></td>
-    <td align="center"><strong>Service Search</strong><br><img src="docs/images/client-service-search.jpg" alt="Service Search" width="360" height="220"/></td>
+    <td align="center"><strong>Login</strong><br><a href="docs/images/login.jpg"><img src="docs/images/login.jpg" alt="Login" width="300"/></a></td>
+    <td align="center"><strong>Service Search</strong><br><a href="docs/images/client-service-search.jpg"><img src="docs/images/client-service-search.jpg" alt="Service Search" width="300"/></a></td>
   </tr>
   <tr>
-    <td align="center"><strong>Client Home Map</strong><br><img src="docs/images/client-home-map.jpg" alt="Client Home Map" width="360" height="220"/></td>
-    <td align="center"><strong>Provider Requests</strong><br><img src="docs/images/provider-requests.jpg" alt="Provider Requests" width="360" height="220"/></td>
+    <td align="center"><strong>Client Home Map</strong><br><a href="docs/images/client-home-map.jpg"><img src="docs/images/client-home-map.jpg" alt="Client Home Map" width="300"/></a></td>
+    <td align="center"><strong>Provider Requests</strong><br><a href="docs/images/provider-requests.jpg"><img src="docs/images/provider-requests.jpg" alt="Provider Requests" width="300"/></a></td>
   </tr>
   <tr>
-    <td align="center"><strong>Intervention Tracking</strong><br><img src="docs/images/intervention-tracking.jpg" alt="Intervention Tracking" width="360" height="220"/></td>
-    <td align="center"><strong>Services Tab</strong><br><img src="docs/images/service-tab.jpg" alt="Services Tab" width="360" height="220"/></td>
+    <td align="center"><strong>Intervention Tracking</strong><br><a href="docs/images/intervention-tracking.jpg"><img src="docs/images/intervention-tracking.jpg" alt="Intervention Tracking" width="300"/></a></td>
+    <td align="center"><strong>Services Tab</strong><br><a href="docs/images/service-tab.jpg"><img src="docs/images/service-tab.jpg" alt="Services Tab" width="300"/></a></td>
   </tr>
   <tr>
-    <td align="center" colspan="2"><strong>Profile History</strong><br><img src="docs/images/profile-history.jpg" alt="Profile History" width="360" height="220"/></td>
+    <td align="center" colspan="2"><strong>Profile History</strong><br><a href="docs/images/profile-history.jpg"><img src="docs/images/profile-history.jpg" alt="Profile History" width="300"/></a></td>
   </tr>
 </table>
+
+Click any screenshot to open the full-size image.
 
 ## Quick Start (Local)
 1. Copy `php_api` to XAMPP htdocs as `my_api`:
