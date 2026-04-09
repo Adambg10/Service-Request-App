@@ -29,10 +29,10 @@ Backend is a PHP + MySQL API.
 <table>
   <tr>
     <td align="center"><strong>Login</strong><br><a href="docs/images/login.jpg"><img src="docs/images/login.jpg" alt="Login" width="300"/></a></td>
-    <td align="center"><strong>Service Search</strong><br><a href="docs/images/client-service-search.jpg"><img src="docs/images/client-service-search.jpg" alt="Service Search" width="300"/></a></td>
+    <td align="center"><strong>Client Home Map</strong><br><a href="docs/images/client-home-map.jpg"><img src="docs/images/client-home-map.jpg" alt="Client Home Map" width="300"/></a></td>
   </tr>
   <tr>
-    <td align="center"><strong>Client Home Map</strong><br><a href="docs/images/client-home-map.jpg"><img src="docs/images/client-home-map.jpg" alt="Client Home Map" width="300"/></a></td>
+    <td align="center"><strong>Service Search</strong><br><a href="docs/images/client-service-search.jpg"><img src="docs/images/client-service-search.jpg" alt="Service Search" width="300"/></a></td>
     <td align="center"><strong>Provider Requests</strong><br><a href="docs/images/provider-requests.jpg"><img src="docs/images/provider-requests.jpg" alt="Provider Requests" width="300"/></a></td>
   </tr>
   <tr>
